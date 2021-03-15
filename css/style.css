@@ -1800,7 +1800,7 @@ ul.tab_menu li.active a {
     color: #e73b49;	
 }
 .header-bottom-area.home-page-2 .menu-search-box {
-    /*margin-top: 2px;*/
+    
     margin-top: 36px;
 }
 .header-bottom-area.home-page-2 .menu-search-box form input {
@@ -3368,32 +3368,32 @@ p.checkout-coupon input[type=submit]{
 	background:#000
 }
 .menu-search-box input::-webkit-input-placeholder {
-    /* Chrome */
+  
     color: #fff;
     opacity: 1;
 }
 .menu-search-box input::-moz-placeholder {
-    /* Firefox 19+ */
+   
     color: #fff;
     opacity: 1;
 }
 .search-box input::-webkit-input-placeholder,.sideber-form input::-webkit-input-placeholder,.checkout-form-list input::-webkit-input-placeholder,.checkout-form-list textarea::-webkit-input-placeholder,.checkout-coupon input::-webkit-input-placeholder,.menu-search-box.scnd-fix input::-webkit-input-placeholder,.search-box-3-hover input::-webkit-input-placeholder{
-    /* Chrome */
+   
     color: #555;
     opacity: 1;
 }
 .search-box input::-moz-placeholder,.sideber-form input::-moz-placeholder,.checkout-form-list input::-moz-placeholder,.checkout-form-list textarea::-moz-placeholder,.checkout-coupon input::-moz-placeholder,.menu-search-box.scnd-fix input::-moz-placeholder,.search-box-3-hover input::-moz-placeholder {
-    /* Firefox 19+ */
+   
     color: #555;
     opacity: 1;
 }
 .coupon input::-webkit-input-placeholder,.form-group.contuct_f input::-webkit-input-placeholder {
-    /* Chrome */
+   
     color: #777;
     opacity: 1;
 }
 .coupon input::-moz-placeholder,.form-group.contuct_f input::-moz-placeholder {
-    /* Firefox 19+ */
+    
     color: #777;
     opacity: 1;
 }

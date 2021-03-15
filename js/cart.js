@@ -2,10 +2,10 @@
 let cart = JSON.parse(localStorage.getItem("cart"))
 cart ? cart : cart = [];
 
-function updateCartLink(){
-    document.getElementById('cart-link').innerHTML = `Cart(${ cart.length })`;
-}
-updateCartLink()
+// function updateCartLink(){
+//     document.getElementById('cart-link').innerHTML = `Cart(${ cart.length })`;
+// }
+// updateCartLink()
 
 // Check if cart content is available
 
@@ -60,12 +60,28 @@ function renderCartItems(){
 
 
 function add(){
-    let cart = JSON.parse(localStorage.getItem("cart"));
-    cart ? cart : cart = [];
-    cart.push(selectedProduct);
-    console.log(cart);
-    document.getElementById("cart-link").innerHTML = `Cart(${ cart.length })`;
-    localStorage.setItem("cart",JSON.stringify(cart));
+    // let cart = JSON.parse(localStorage.getItem("cart"));
+    // cart ? cart : cart = [];
+    // cart.push(selectedProduct);
+    // console.log(cart);
+    // document.getElementById("cart-link").innerHTML = `Cart(${ cart.length })`;
+    // localStorage.setItem("cart",JSON.stringify(cart));
+    let img = '<img src="img/product/Silver Fancy Oval Claw & Cluster Cubic Zirconia Ring.jpg" class="first_img" alt="" />'
+    let descrip = 'Oval Silver Ring'
+    let price = 'R1573.00'
+    let table_data = document.getElementById("cart-table")
+    window.location.href = "./cart.html"
+
+    table_data.innerHTML += `
+    <tr>
+        <td class="product-thumbnail"><a href="#">${img}</a></td>
+        <td class="product-name"><a href="#">${descrip}</a></td>
+        <td class="product-price"><span class="amount">${price}</span></td>
+        <td class="product-quantity"><input type="number" value="1" /></td>
+        <td class="product-subtotal">${price}</td>
+        <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
+    </tr>
+    `
 }
 
 function remove(id){
