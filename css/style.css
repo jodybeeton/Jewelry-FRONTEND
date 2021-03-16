@@ -3515,9 +3515,21 @@ p.checkout-coupon input[type=submit]{
 
 .profile_addresstab{ padding:12px 0; margin-bottom:15px; border-bottom:#999 solid 1px;}
 
+.new-product-home-4-active{
+	display: flex;
+}
 
+.new-product-home-2-active{
+	display: flex;
+}
 
+.static-slider-area.new-product-4.dotted-style{
+	padding: 180px;
+}
 
+.feature-home-2-active{
+	display: flex;
+}
 
 
 

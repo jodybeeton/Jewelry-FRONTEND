@@ -59,20 +59,32 @@ function renderCartItems(){
 }
 
 
-function add(){
+function add(items){
+    let info = document.getElementById("itemCart");
+    items.forEach((item) =>{
+        info.innerHTML +=`
+        <div class = "product-cart">
+            <img src = ${item.image}>
+            <h4>${item.name}</h4>
+            <h4>${item.price}</h4>
+        </div>
+
+        `
+    })
+
     // let cart = JSON.parse(localStorage.getItem("cart"));
     // cart ? cart : cart = [];
     // cart.push(selectedProduct);
     // console.log(cart);
     // document.getElementById("cart-link").innerHTML = `Cart(${ cart.length })`;
     // localStorage.setItem("cart",JSON.stringify(cart));
-    let img = '<img src="img/product/Silver Fancy Oval Claw & Cluster Cubic Zirconia Ring.jpg" class="first_img" alt="" />'
-    let descrip = 'Oval Silver Ring'
-    let price = 'R1573.00'
-    let table_data = document.getElementById("cart-table")
-    window.location.href = "./cart.html"
+    // let img = '<img src="img/product/Silver Fancy Oval Claw & Cluster Cubic Zirconia Ring.jpg" class="first_img" alt="" />'
+    // let descrip = 'Oval Silver Ring'
+    // let price = 'R1573.00'
+    // let table_data = document.getElementById("cart-table")
+    // window.location.href = "./cart.html"
 
-    table_data.innerHTML += `
+    // table_data.innerHTML += `
     <tr>
         <td class="product-thumbnail"><a href="#">${img}</a></td>
         <td class="product-name"><a href="#">${descrip}</a></td>
